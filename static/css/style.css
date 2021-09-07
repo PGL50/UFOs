@@ -1,16 +1,11 @@
 body {
 
     color: #f7f7f7;
-
-    .jumbotron {
-        background-image: url("../images/nasa.jpg");
-        background-size: 100% 100%;
-        text-align: center;
-      }
   }
 
-/* .jumbotron {
-    background-image: url("/images/nasa.jpg");
-    background-size: 100% 100%;
+.jumbotron {
+    /* background-image: url("/images/nasa.jpg"); */
+    background-image: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1952&q=80");
+    background-size: 100% 100%; 
     text-align: center;
-  } */
+  } 
