@@ -30,7 +30,7 @@ var filters = {} ;
 function updateFilters() {
 
     // 4a. Save the element that was changed as a variable.
-    let changedElement = d3.select("#datetime") ;
+    let changedElement = d3.select("#datetime") ;  //???
 
     // 4b. Save the value that was changed as a variable.
     let elementValue = changedElement.property("value") ;
@@ -58,7 +58,7 @@ function updateFilters() {
   function filterTable() {
   
     // 8. Set the filtered data to the tableData.
-    
+    let filteredData = tableData;
   
     // 9. Loop through all of the filters and keep any data that
     // matches the filter values
