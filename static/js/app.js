@@ -83,7 +83,6 @@ function updateFilters() {
       filteredData = filteredData.filter(row => row.shape=== filters.shape);
       // console.log(filteredData)
     }
-  
         // 10. Finally, rebuild the table using the filtered data
   buildTable(filteredData);  
   }
