@@ -63,26 +63,50 @@ function updateFilters() {
   
     // 9. Loop through all of the filters and keep any data that
     // matches the filter values
+
+    // -----------------First try--------------------------
+    // for (var key in filters) {
+    //   console.log(filteredData) ;
+    //   console.log(key, filters[key]);
+    //   if (key) {
+    //     filteredData = filteredData.filter(row => row.key === filters[key]);
+    //     // console.log(key, filters[key]);
+    //     // console.log(filteredData)
+    //   }
+    // } ;
+
+
+    // -----------------Second try--------------------------
+    // Object.keys(filters).forEach(key => {
+    //   console.log(filteredData) ;
+    //   filteredData = filteredData.filter(row => row.key === filters[key]);
+    //   console.log(key, filters[key]);
+    //   console.log(filteredData) ;
+    // });
+
+
+      // -----------------Hard coded--------------------------
     if (filters.datetime) {
       filteredData = filteredData.filter(row => row.datetime === filters.datetime);
-      // console.log(filteredData)
+      console.log(filteredData)
     }
     if (filters.city) {
       filteredData = filteredData.filter(row => row.city === filters.city);
-      // console.log(filteredData)
+      console.log(filteredData)
     }
     if (filters.state) {
       filteredData = filteredData.filter(row => row.state=== filters.state);
-      // console.log(filteredData)
+      console.log(filteredData)
     }
     if (filters.country) {
       filteredData = filteredData.filter(row => row.country === filters.country);
-      // console.log(filteredData)
+      console.log(filteredData)
     }
     if (filters.shape) {
       filteredData = filteredData.filter(row => row.shape=== filters.shape);
-      // console.log(filteredData)
+      console.log(filteredData)
     }
+
         // 10. Finally, rebuild the table using the filtered data
   buildTable(filteredData);  
   }
