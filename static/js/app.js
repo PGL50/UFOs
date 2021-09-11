@@ -51,7 +51,6 @@ function updateFilters() {
   
     // 6. Call function to apply all filters and rebuild the table
     filterTable();
-  
   }
   
   // 7. Use this function to filter the table when data is entered.
@@ -63,47 +62,17 @@ function updateFilters() {
     // 9. Loop through all of the filters and keep any data that
     // matches the filter values
 
-    // -----------------First try--------------------------
-    for (var key in filters) {
-      // console.log(filteredData) ;
-      if (filters[key]) {
-        filteredData = filteredData.filter(row => row[key] === filters[key]);
-        console.log(key, filters[key]);
-        console.log(filteredData)
-      }
-    } ;
+    // -----------------Method 1--------------------------
+    // for (var key in filters) {
+    //   if (filters[key]) {
+    //     filteredData = filteredData.filter(row => row[key] === filters[key]);
+    //   }
+    // } ;
 
-// console.log(filters) ;
-
-    // -----------------Second try--------------------------
-    // Object.keys(filters).forEach(key => {
-    //   console.log(key, filters[key]);
-    //   filteredData = filteredData.filter(row => row[key] === filters[key]);
-    //   console.log(filteredData) ;
-    // });
-
-
-      // -----------------Hard coded--------------------------
-    // if (filters.datetime) {
-    //   filteredData = filteredData.filter(row => row.datetime === filters.datetime);
-    //   console.log(filteredData)
-    // }
-    // if (filters.city) {
-    //   filteredData = filteredData.filter(row => row.city === filters.city);
-    //   console.log(filteredData)
-    // }
-    // if (filters.state) {
-    //   filteredData = filteredData.filter(row => row.state=== filters.state);
-    //   console.log(filteredData)
-    // }
-    // if (filters.country) {
-    //   filteredData = filteredData.filter(row => row.country === filters.country);
-    //   console.log(filteredData)
-    // }
-    // if (filters.shape) {
-    //   filteredData = filteredData.filter(row => row.shape=== filters.shape);
-    //   console.log(filteredData)
-    // }
+    // -----------------Method 2--------------------------
+    Object.keys(filters).forEach(key => {
+      filteredData = filteredData.filter(row => row[key] === filters[key]);
+    });
 
         // 10. Finally, rebuild the table using the filtered data
   buildTable(filteredData);  
