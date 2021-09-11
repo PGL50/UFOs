@@ -1,6 +1,6 @@
 # Overview of the UFO Data Analysis
 
-### This module,  a table was create from a JSON data array. The table we brought in using Javascript and HTML code to create an interactive, filterable web based table. This table will have the ability to filter data based on multiple criteria.
+### For this module, a web table was create from a JSON data array. The table consists of UFO sighting data for date, city, state, country, and shape for each UFO sighting. We brought in the table using Javascript and HTML code to create an interactive, filterable web based table. The web site will allow users to filter on different criterion within the table. 
 
 <br/>
 
@@ -23,7 +23,7 @@
 
     ![Table](./Resources/fulltable.png) 
 
-1. Look at the possible things to filter on (each box has sample data in them to help the user fill the boxes). Table will not filter until data is typed in and user hits ENTER:
+1. Look at the possible things to filter on (each box has sample data in them to help the user fill the boxes). Table will not filter until data is typed in and user hits ENTER for each item:
 
     ![Filters](./Resources/filters.png) 
 
