@@ -62,19 +62,19 @@ function updateFilters() {
     // 9. Loop through all of the filters and keep any data that
     // matches the filter values
 
-    // -----------------Method 1--------------------------
+    // -----------------Method 1-for loop--------------------------
     // for (var key in filters) {
     //   if (filters[key]) {
     //     filteredData = filteredData.filter(row => row[key] === filters[key]);
     //   }
     // } ;
 
-    // -----------------Method 2--------------------------
+    // -----------------Method 2- forEach --------------------------
     Object.keys(filters).forEach(key => {
       filteredData = filteredData.filter(row => row[key] === filters[key]);
     });
 
-        // 10. Finally, rebuild the table using the filtered data
+  // 10. Finally, rebuild the table using the filtered data
   buildTable(filteredData);  
   }
 
