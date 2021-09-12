@@ -37,7 +37,9 @@
 
 <br/>
 
-### The website has lots of information on UFO sightings. The filtering capabilities are quite useful to narrow down the table especially if more data are to be added. One drawback is that the user has to know what the possible values to filter on that are available in the table. If the table get really long (more than the current ~110 rows) it may be difficult to choose filtering values. Another drawback is having to delete the filter entries or hit refresh to reset the web page.
+### The website has lots of information on UFO sightings. The filtering capabilities are quite useful to narrow down the table especially if more data are to be added. One drawback is that the user has to know what the possible values to filter on that are available in the table. If the table gets really long (more than the current ~110 rows) it may be difficult to choose filtering values. Another drawback is having to delete the filter entries or hit refresh to reset the web page.
+
+<br/>
 
 ### For future development I would recommend a few improvements:
 
@@ -47,4 +49,4 @@
 
 2. Have a function built in that converts the text fields to all lowercase to match what is in the json table. For example, if someone types in Fresno nothing will be filtered since the value in the table is fresno and it's looking for exact matches.
 
-3. It would be nice to have a "Clear the filters" button and not to have to delete the text or hot web browser refresh button.
+3. It would be nice to have a "Clear the filters" button and not to have to delete the text or hit web browser refresh button.
